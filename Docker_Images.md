@@ -13,6 +13,13 @@ Docker Image is static snapshot of what the local development should look like.
 * docker run <image_name> --> Creates a container from the image and runs it. If the image is not available locally, it will first pull it from Docker Hub.
 * docker start <container_id_or_name> --> is used to start a stopped container by referring to the container ID or name, not the image name.
 * docker stop <container_id_or_name> --> Stops a running container.
+* docker rm <container_name_or_id> --> remove a container.
+* docker rm -f <container_name_or_id> --> remove forcefully.
+* docker rmi <image_name_or_id> --> remove images.
+* docker rmi -f <image_name_or_id> --> remove forcefully.
+* docker container prune --> remove all stopped conatiners.
+* docker image prune -a --> remove all unused images.
+* docker system prune -a --> Remove Everything (Containers, Images, Networks,.  Volumes)
 
 
 * docker run -d is used for detached mode.
